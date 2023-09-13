@@ -1,6 +1,5 @@
 # code for computing factorial
-
-number = 5
+number = int(input('Enter a number!'))
 result = 1
 if number < 0:
     print('Error!')
