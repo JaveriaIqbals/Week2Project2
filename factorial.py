@@ -1,12 +1,15 @@
-# code for computing factorial
-number = int(input('Enter a number!'))
-result = 1
-if number < 0:
-    print('Error!')
-elif number == 0:
-    print('Factorial of 0 is 1')
-else:
-    for i in range(1, number+1):
-        result = result * i
-    print('Factorial of', number , "is", result)
+def factorial(number):
+    # code for computing factorial
+    result = 1
+    if number < 0:
+        print('Error!')
+    elif number == 0:
+        print('Factorial of 0 is 1')
+    else:
+        for i in range(1, number+1):
+            result = result * i
+        print('Factorial of', number , "is", result)
 
+
+number = int(input('Enter a number!'))
+factorial(number)
